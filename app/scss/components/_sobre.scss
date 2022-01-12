@@ -1,0 +1,56 @@
+@use '../util' as *;
+
+.sobre {
+  padding-block: rem(60);
+  
+  &__info {
+    text-align: center;
+    padding: rem(30) rem(10);
+    display: grid;
+    gap: rem(20);
+
+    h5 {
+      font-size: rem(18);
+      text-transform: uppercase;
+      letter-spacing: rem(4);
+    }
+
+    h4 {
+      font-size: rem(24);
+      font-family: var(--font-playfair);
+    }
+
+    a {
+      font-size: rem(14);
+      color: var(--dark-grey);
+      text-transform: uppercase;
+      letter-spacing: rem(2);
+      display: block;
+      max-width: max-content;
+      margin: 0 auto;
+      padding-block: rem(5);
+      box-shadow: 0 2px var(--dark-grey);
+    }
+  }
+
+  .img-bolo {
+    background: url(../../../img/blog-foto1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 363px;
+  }
+
+  .img-frutas {
+    background: url(../../../img/blog-foto2.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 363px;
+  }
+
+  .img-salada {
+    background: url(../../../img/blog-foto3.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 363px;
+  }
+}
