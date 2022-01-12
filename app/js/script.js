@@ -1,5 +1,6 @@
-console.log('HELLO');
+const menuBtn = document.querySelector('#menu-icon')
+const menu = document.querySelector('#menu')
 
-const test = () => {
-	console.log('this is a test');
-};
+menuBtn.addEventListener('click', () => {
+	menu.classList.toggle('slide-in');
+})
