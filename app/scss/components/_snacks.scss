@@ -1,0 +1,28 @@
+@use '../util' as *; 
+
+.snacks {
+  background: url(../../../img/cardapio-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: 36.88% 50%;
+  padding: rem(60) rem(24);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(24);
+
+  &__info {
+    background-color: var(--overlay);
+    color: var(--white);
+    padding: rem(30) rem(20);
+    font-size: rem(16);
+    text-transform: uppercase;
+    text-align: center;
+    display: grid;
+    gap: rem(20);
+  }
+
+  &__icon {
+    width: rem(48);
+    height: rem(48);
+    margin: 0 auto;
+  }
+}

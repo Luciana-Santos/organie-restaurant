@@ -5,15 +5,9 @@
   justify-content: end;
   padding-block: rem(24);
 
-  .menu__icon {
-    font-size: rem(24);
-    color: var(--white);
-    cursor: pointer;
-  }
-
   .menu {
     position: absolute;
-    top: 60px;
+    top: 65px;
     width: calc(100% - 48px);
     background: var(--white);
     padding: rem(10);
@@ -78,35 +72,49 @@
   }
 }
 
+.menu-mobile {
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  width: rem(24);
+  height: rem(24);
 
-.hide {
-  display: none;
+  .menu__icon {
+    width: 24px;
+    height: 4px;
+    background-color: var(--white);
+    border-radius: 6px;
+    transition: all .4s ease-in-out;
+  
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 4px;
+      background: var(--white);
+      border-radius: 6px;
+      transition: all .4s ease-in-out;
+    }
+  
+    &::before {
+      transform: translateY(-9px);
+    }
+  
+    &::after {
+      transform: translateY(9px);
+    }
+  }
 }
 
-@keyframes arrowSlide {
-  from {
-    transform: translateY(-20px);
-  }
-  to {
-    transform: translateY(0);
-  }
+.menu-mobile.open .menu__icon {
+  transform: translateX(-50px);
+  background: transparent;
 }
 
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    visibility: hidden;
-  }
-  0% {
-    opacity: 0;
-    visibility: visible;
-  }
-  to {
-    opacity: 1;
-    visibility: visible;
-  }
+.menu-mobile.open .menu__icon::before {
+  transform: rotate(45deg) translate(35px, -35px);
 }
 
-.slide-in {
-  animation: slideIn 200ms ease-in forwards;
+.menu-mobile.open .menu__icon::after {
+  transform: rotate(-45deg) translate(35px, 35px);
 }
