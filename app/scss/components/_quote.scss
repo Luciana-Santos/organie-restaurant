@@ -1,0 +1,51 @@
+@use '../util' as *;
+
+.quote {
+  background: var(--light-grey);
+  text-align: center;
+  padding-bottom: rem(60);
+
+  &__img {
+    margin-bottom: rem(60);
+
+    &--1 {
+      height: 563px;
+      background: url(../../../img/quote-img1.jpeg);
+      background-size: cover;
+      background-position: center;
+    }
+    &--2 {
+      height: 563px;
+      background: url(../../../img/quote-img2.jpeg);
+      background-size: cover;
+      background-position: center;
+    }
+    &--3 {
+      height: 563px;
+      background: url(../../../img/quote-im3.jpeg);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  blockquote {
+    margin-bottom: rem(20);
+    p {
+    line-height: rem(25);
+    font-style: italic;
+    }
+  }
+
+  ul {
+    font-size: rem(20);
+    display: flex;
+    justify-content: center;
+
+    a {
+      padding: rem(5);
+      display: inline-block;
+      margin-inline: rem(5);
+      color: var(--dark-grey);
+    }
+  }
+}

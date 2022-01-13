@@ -1,0 +1,13 @@
+@use '../util' as *;
+
+.footer {
+  background: var(--dark-grey);
+  color: var(--light-grey);
+  padding-block: rem(20);
+  text-align: center;
+
+  a {
+    color: var(--white);
+    text-decoration: underline;
+  }
+}
