@@ -1,0 +1,2 @@
+"use strict";var menuBtn=document.querySelector(".menu-mobile"),menu=document.querySelector("#menu"),body=document.querySelector("body");menuBtn.addEventListener("click",(function(){menu.classList.contains("fade-in")?(menu.classList.remove("fade-in"),menuBtn.classList.remove("open")):(menu.classList.add("fade-in"),menuBtn.classList.add("open"))}));
+//# sourceMappingURL=script.js.map
