@@ -1,0 +1,54 @@
+@use '../util' as *;
+
+.aulas {
+  padding-block: rem(60);
+  text-align: center;
+
+  &__info {
+    h2 {
+      font-size: rem(36);
+      font-family: var(--font-playfair);
+      margin-bottom: rem(20);
+    }
+
+    p {
+      line-height: rem(25);
+      margin-bottom: rem(20);
+    }
+  }
+
+  &__img {
+    display: grid;
+    gap: rem(10);
+    margin-bottom: rem(30);
+
+    &--1 {
+      height: 323px;
+      background: url(../../../img/slide-1.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    &--2 {
+      height: 323px;
+      background: url(../../../img/slide-2.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    &--3 {
+      height: 323px;
+      background: url(../../../img/slide-3.jpeg) no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  a {
+    font-size: rem(14);
+    color: var(--dark-grey);
+    text-transform: uppercase;
+    letter-spacing: rem(2);
+    display: inline-block;
+    padding-block: rem(5);
+    box-shadow: 0 2px var(--dark-grey);
+  }
+}
