@@ -1,0 +1,44 @@
+@use '../util' as *;
+
+.reviews {
+  background: var(--light-grey);
+  padding-block: rem(60);
+
+  &__info {
+    display: grid;
+    gap: rem(20);
+
+    h4 {
+      font-size: rem(18);
+      letter-spacing: rem(4);
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: rem(36);
+      font-family: var(--font-playfair);
+      text-transform: capitalize;
+    }
+
+    .aspas {
+      width: rem(33);
+    }
+
+    p {
+      line-height: rem(25);
+    }
+
+    &--autor {
+      letter-spacing: rem(4);
+      text-transform: uppercase;
+      margin-bottom: rem(20);
+    }
+  }
+
+  &__img {
+    background: url(../../../img/reviews-img.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 349px;
+  }
+}
