@@ -5,7 +5,7 @@
   
   &__info {
     text-align: center;
-    padding: rem(30) rem(10);
+    padding: rem(30);
     display: grid;
     gap: rem(20);
 
@@ -52,5 +52,10 @@
     background-size: cover;
     background-position: center;
     height: 363px;
+  }
+
+  @include breakpoint(medium) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }

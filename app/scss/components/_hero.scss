@@ -33,9 +33,34 @@
         &:hover {
           box-shadow: 0 2px 0 var(--light-grey);
         }
+
+        @include breakpoint(medium) {
+          color: var(--white);
+        }
+      }
+      @include breakpoint(medium) {
+        display: flex;
+        border: none;
+        padding: 0;
       }
     }
+
+    @include breakpoint(medium) {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 0;
+    background: none;
   }
+  }
+
+  @include breakpoint(medium) {
+    place-content: center;
+  }
+  
 }
 
 .hero {
@@ -51,6 +76,10 @@
 
     .logo {
       margin-bottom: rem(48);
+
+      img {
+        margin: 0 auto;
+      }
     }
     
     h1 {
@@ -62,12 +91,13 @@
     p {
       line-height: rem(25);
       max-width: rem(700);
-      margin-bottom: rem(40);
+      margin: 0 auto rem(40) auto;
     }
 
     .arrow {
       font-size: rem(24);
       animation: arrowSlide 1s alternate-reverse infinite;
+      margin-top: 30px;
     }
   }
 }
@@ -103,6 +133,10 @@
     &::after {
       transform: translateY(9px);
     }
+  }
+
+  @include breakpoint(medium) {
+    display: none;
   }
 }
 

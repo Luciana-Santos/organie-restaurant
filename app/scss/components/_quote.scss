@@ -26,13 +26,21 @@
       background-size: cover;
       background-position: center;
     }
+
+    @include breakpoint(medium) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   blockquote {
-    margin-bottom: rem(20);
+    max-width: 800px;
+    margin: 0 auto rem(20);
+
     p {
-    line-height: rem(25);
+    line-height: rem(32);
     font-style: italic;
+    font-size: rem(20);
     }
   }
 

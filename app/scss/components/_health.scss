@@ -34,5 +34,18 @@
     background-position: center;
     background-size: cover;
     height: 322px;
+
+    @include breakpoint(medium) {
+      height: 100%;
+    }
+  }
+
+  .grid {
+
+    @include breakpoint(medium) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      place-content: center;
+    }
   }
 }

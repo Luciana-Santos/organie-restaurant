@@ -5,6 +5,7 @@
   padding-block: rem(60);
 
   &__info {
+    padding: rem(30) rem(40);
     display: grid;
     gap: rem(20);
 
@@ -40,5 +41,14 @@
     background-size: cover;
     background-position: center;
     height: 349px;
+  }
+
+  .grid {
+
+    @include breakpoint(medium) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      place-content: center;
+    }
   }
 }

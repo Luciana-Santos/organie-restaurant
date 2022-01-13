@@ -40,6 +40,10 @@
       background-size: cover;
       background-position: center;
     }
+
+    @include breakpoint(medium) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   a {

@@ -6,6 +6,7 @@
   &__titulo {
     text-align: center;
     margin-bottom: rem(60);
+    grid-column: 1 / -1;
 
     h4 {
       font-size: rem(18);
@@ -32,5 +33,10 @@
       font-weight: 300;
       margin-bottom: rem(20);
     }
+  }
+
+  @include breakpoint(large) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
