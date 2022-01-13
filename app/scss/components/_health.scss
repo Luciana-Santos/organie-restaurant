@@ -1,0 +1,38 @@
+@use '../util' as *;
+
+.health {
+  background: var(--light-grey);
+  padding-block: rem(30);
+
+  &__info {
+    padding: rem(30) rem(40);
+
+    h2 {
+      font-size: rem(36);
+      font-family: var(--font-playfair);
+      margin-bottom: rem(20);
+    }
+    
+    p {
+      margin-bottom: rem(20);
+      line-height: rem(25);
+    }
+  
+    a {
+      font-size: rem(14);
+      color: var(--dark-grey);
+      text-transform: uppercase;
+      letter-spacing: rem(2);
+      padding-block: rem(5);
+      box-shadow: 0 2px var(--dark-grey);
+    }
+  }
+
+
+  &__img {
+    background: url(../../../img/saudavel-img.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 322px;
+  }
+}
